@@ -35,6 +35,8 @@ int* Espejo(int *p, int *f, int n){
 		for(int i=0;i<n*2-1;i++) { 
 			cout << newp[i];
 		}
+		delete [] p;
+		delete [] newp;
 		return 0;
 	}
  	
