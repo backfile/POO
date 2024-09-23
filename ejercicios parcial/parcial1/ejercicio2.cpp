@@ -9,8 +9,9 @@
 #include <vector>
 using namespace std;
 
-int* Espejo(int *p, int *f, int n){
-	int *newp = new int[n*2];
+int* Espejo(int *p, int *f){
+	int tamanio = f - p;
+	int *newp = new int[tamanio];
 	for(int i=0;i<n;i++) { 
 		newp[i] = p[i];
 	}
@@ -31,7 +32,7 @@ int* Espejo(int *p, int *f, int n){
 		for(int i=0;i<n;i++) { 
 			cin >> p[i]; 
 		}
-		int *newp = Espejo(p, p+(n-1), n);
+		int *newp = Espejo(p, p+(n-1));
 		for(int i=0;i<n*2-1;i++) { 
 			cout << newp[i];
 		}
