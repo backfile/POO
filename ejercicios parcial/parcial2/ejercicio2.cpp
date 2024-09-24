@@ -68,6 +68,7 @@ int main() {
 	vector<string>preguntas = {"como estas?"};
 	vector<string>respuestas = {"bien"};
 	Memory f("franco", preguntas, respuestas);
+	vector<IA*>a = {m, f};
 	RecibirIA(m);
 	RecibirIA(f);
 	return 0;
