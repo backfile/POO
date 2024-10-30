@@ -23,7 +23,7 @@ int* Funcion(int *a,int *b, int *c, int *d) {
 	
 	cout << "\n";
 	
-	for(int i=(c-a+1);i<d-a+1;i++) { 
+	for(int i=(c-a+1);i<d-a;i++) { 
 		pnuevo[v] = a[i];
 		v++;
 	}
@@ -42,7 +42,7 @@ int main() {
 	for(int i=0;i<n;i++) { 
 		cin >> p[i];
 	}
-	int *pnuevo = Funcion((p),(p+2),(p+4),(p+n-1));
+	int *pnuevo = Funcion((p),(p+2),(p+4),(p+n));
 	delete[]p;
 	delete[]pnuevo;
 	return 0;

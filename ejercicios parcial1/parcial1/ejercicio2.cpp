@@ -10,8 +10,8 @@
 using namespace std;
 
 int* Espejo(int *p, int *f){
-	int tamanio = f - p;
-	int *newp = new int[tamanio];
+	int n = f - p;
+	int *newp = new int[n];
 	for(int i=0;i<n;i++) { 
 		newp[i] = p[i];
 	}
